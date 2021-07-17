@@ -164,7 +164,3 @@ Resize the window, and confirm that the correct visual states are applied.
 Make sure you can use the flip view to navigate to each of the four images.
 
 Click the button, dismiss the message dialog, pick a folder containing files, and confirm that the first three filenames are displayed in the list box.
-
-===
-
-TODO: confirm that you still need to put VSM in a UC.
