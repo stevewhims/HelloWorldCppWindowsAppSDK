@@ -1,6 +1,6 @@
 # A C++/WinRT Windows App SDK 0.8.1 Hello, World! app ported from a UWP app
 
-This repo contains the result of taking A simple C++/WinRT UWP Hello, World! app ([HelloWorldCppUWP](https://github.com/stevewhims/HelloWorldCppUWP)), and porting it to the Windows App SDK.
+This repo contains the result of taking a simple C++/WinRT UWP Hello, World! app ([HelloWorldCppUWP](https://github.com/stevewhims/HelloWorldCppUWP)), and porting it to the Windows App SDK.
 
 ## Install the Windows App SDK 0.8.1 VSIX
 
@@ -8,13 +8,13 @@ In [Visual Studio](https://visualstudio.microsoft.com/downloads/), click **Exten
 
 ## Create a new project
 
-In Visual Studio, create a new project from the **Blank App, Packaged (WinUI 3 in Desktop)** project template. You can find that project template in the **Create a new project** dialog by choosing language: *C++*; platform: *Project Reunion*; project type: *Desktop* (which is referring to Win32 in this context) or *WinUI*. Name the project *HelloWorldCppWindowsAppSDK*, uncheck **Place solution and project in the same directory**, and target the most recent release (not preview) of the client operating system (19041 at time of writing).
+In Visual Studio, create a new project from the **Blank App, Packaged (WinUI 3 in Desktop)** project template. You can find that project template in the **Create a new project** dialog by choosing language: *C++*; platform: *Project Reunion*; project type: *Desktop* (which is referring to Win32 in this context) or *WinUI*. Name the project *HellowWorldCppWindowsAppSDK*, uncheck **Place solution and project in the same directory**, and target the most recent release (not preview) of the client operating system (19041 at time of writing).
 
 You'll now see two projects in Solution Explorer&mdash;one is qualified as **(Desktop)**, and the other as **(Package)**. I'll refer to these as the *Desktop* and *Package* projects, respectively.
 
 ## Add asset files
 
-In Solution Explorer, in the Package project under **Images**, add a new folder (not a filter) named *SampleMedia*. Open the Package project folder in File Explorer and place [the four images](https://github.com/stevewhims/HelloWorldCppWindowsAppSDK/tree/master/HelloWorldCppWindowsAppSDK/HelloWorldCppWindowsAppSDK%20(Package)/Images/SampleMedia) in that folder.
+In Solution Explorer, in the Package project under **Images**, add a new folder (not a filter) named *SampleMedia*. Open the Package project folder in File Explorer and place [the four images](https://github.com/stevewhims/HellowWorldCppWindowsAppSDK/tree/master/HellowWorldCppWindowsAppSDK/HellowWorldCppWindowsAppSDK%20(Package)/Images/SampleMedia) in that folder.
 
 Back in Solution Explorer, in the Package project, add the existing images to the **SampleMedia** folder.
 
@@ -166,7 +166,5 @@ Make sure you can use the flip view to navigate to each of the four images.
 Click the button, dismiss the message dialog, pick a folder containing files, and confirm that the first three filenames are displayed in the list box.
 
 ===
-
-TODO: fix typo in project and push it to GitHub again
 
 TODO: confirm that you still need to put VSM in a UC.
