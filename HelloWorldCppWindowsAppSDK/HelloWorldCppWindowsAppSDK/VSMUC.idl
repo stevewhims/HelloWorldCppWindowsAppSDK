@@ -1,0 +1,8 @@
+namespace HelloWorldCppWindowsAppSDK
+{
+    [default_interface]
+    runtimeclass VSMUC : Microsoft.UI.Xaml.Controls.UserControl
+    {
+        VSMUC();
+    }
+}
