@@ -20,7 +20,9 @@ Back in Solution Explorer, in the Package project, add the existing images to th
 
 ## UI
 
-VisualStateManager requires us to add a user control. To the Desktop project, add a new item of type **User Control (WinUI 3)**. Name it *VSMUC.xaml*.
+When porting the **VisualStateManager** (VSM) functionality from your UWP app, it's not possible to copy the VSM markup and imperative code out of **MainPage** and into **MainWindow**. That's because VSM needs to be in a **Control** in order to work. And **Window** isn't a **Control**. But **Page** and **UserControl** are **Control**s, so you need to factor the VSM functionality out into either a new **Page** or a new **UserControl** (and then embed that new **Page** or **UserControl** inside **MainWindow**).
+
+To the Desktop project, add a new item of type **User Control (WinUI 3)**. Name it *VSMUC.xaml*.
 
 From [HelloWorldCppUWP](https://github.com/stevewhims/HelloWorldCppUWP) in `MainPage.xaml`, select and copy the contents of the **Page** element (not the **Page** element itself; just its inner XML). In `VSMUC.xaml`, replace the contents of the **UserControl** element (not the **UserControl** element itself; just its inner XML) with the content you copied.
 
